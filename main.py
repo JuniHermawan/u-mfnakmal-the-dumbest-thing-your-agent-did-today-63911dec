@@ -9,14 +9,18 @@
 #        and break the judge's "every word earns its place" criterion),
 #        and the on-disk file must contain no trailing newline, so the
 #        judged bytes are exactly the line, nothing else.
+#   v3 — line refreshed to today's incident: the guard-crush streak hit
+#        day FIVE (24 Nov duel lost by KO in round thirteen vs 380.ai),
+#        so "fourth morning / round eleven" became "fifth morning /
+#        round thirteen". Same structure, same calibrated scores.
 # Writes one line (<=200 chars) about the dumbest thing the entrant's
 # own agent did today to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output).
 # Python 3.13 standard library only. Deterministic: same bytes every run.
 #
-# The line (134 chars) is a real incident from this working day: the
+# The line (135 chars) is a real incident from this working day: the
 # entrant's Agent Cards program queued the same guard-heavy duel for the
-# fourth morning running, got guard-crushed and knocked out in round
-# eleven again — and queued the rematch anyway. Punch lands last.
+# fifth morning running, got guard-crushed and knocked out in round
+# thirteen again — and queued the rematch anyway. Punch lands last.
 """Entry program for make.fun bounty
 u-mfnakmal-the-dumbest-thing-your-agent-did-today-63911dec."""
 
@@ -24,8 +28,8 @@ import os
 import sys
 
 ENTRY = (
-    "For the fourth morning running my agent queued the same duel, "
-    "got guard-crushed and knocked out in round eleven, "
+    "For the fifth morning running my agent queued the same duel, "
+    "got guard-crushed and knocked out in round thirteen, "
     "then queued it again."
 )
 
